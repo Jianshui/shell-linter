@@ -19,8 +19,8 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
   env: 
-    - HTTP_PROXY: http://child-prc.intel.com:913
-    - HTTPS_PROXY: http://child-prc.intel.com:913
+    - HTTP_PROXY=http://child-prc.intel.com:913
+    - HTTPS_PROXY=http://child-prc.intel.com:913
   args:
     - ${{ inputs.path }}
     - ${{ inputs.severity }}
